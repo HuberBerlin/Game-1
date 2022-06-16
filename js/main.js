@@ -5,7 +5,7 @@ var fuente;
 function preload() {
 
 	game.preload()
-	fuente = loadFont('../assets/PressStart2P-Regular.ttf');
+	fuente = loadFont('assets/PressStart2P-Regular.ttf');
 	
 	
 }
