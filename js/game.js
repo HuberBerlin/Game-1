@@ -1,10 +1,13 @@
 class Game {
 	constructor() {
+	
 		this.background = new Background()
 		this.player = new Player()
 		this.obstacles = []
+		this.obstacles2 = []
 		this.backgroundImages = []
 		this.coinImage;
+		this.coinImage2;
 
 	
 	}
@@ -20,15 +23,19 @@ class Game {
 			{ src: loadImage('assets/background/lineaZul.png'), x: 0, speed: 8.7 },
 			// { src: loadImage('assets/background/plx-5.png'), x: 0, speed: 4 }
 		]
-		this.playerImage = loadImage('../assets/player/chicaPNG.png');
-		// this.coinImage = loadImage('assets/coins/tile000.png')
-		this.coinImage = loadImage('assets/coins/tile000.png')
+		this.playerImage = loadImage('assets/player/chicaPNG.png');
+		// this.coinImage = loadImage('assets/player/volando.gif')
+		this.coinImage = loadImage('assets/coins/tile000.png');
+		this.coinImage2 = loadImage('assets/coins/pollo.png');
 	}
 	draw() {
 
+		
+// if(stage ==0){
+// 	intro();
+// }
 
-
-		console.log(this.obstacles.length)
+	//console.log(this.obstacles.length)
 		clear()
 		this.background.draw()
 		this.player.draw()
@@ -55,6 +62,15 @@ class Game {
 			} else {
 				return true
 			}
-		})
-	}
-}
+		})//----obstacle eins
+
+
+
+//----------------POLLO--------------------
+
+
+
+
+
+	}//----end Draw
+}//----end GAME constructor
